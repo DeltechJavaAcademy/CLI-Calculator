@@ -6,11 +6,11 @@ You and a teammate will build a calculator in the command line.
 <h3>Requirements</h3>
 <ul>
   <li>The user can view a menu of operations</li>
-  <li>The system prompts the user for their chioce</li>
+  <li>The system prompts the user for their choice</li>
   <li>The system prompts the user for two integers</li>
-  <li>The system preforms the chossen operation on the two numbers provided</li>
+  <li>The system performs the chosen operation on the two numbers provided</li>
   <li>The system displays the integer result</li>
-  <li>The system shoud display an error if the user tries to divide by zero</li>
+  <li>The system should display an error if the user tries to divide by zero</li>
  </ul>
  
 <h3>Mock Ups</h3>
@@ -27,7 +27,7 @@ Operations:
 <br>
 4: Division
 <br><br>
-Choose your opertion: 3
+Choose your operation: 3
 <br><br>
 First Number: 6
 <br>
@@ -48,7 +48,7 @@ Operations:
 <br>
 4: Division
 <br><br>
-Choose your opertion: 4
+Choose your operation: 4
 <br><br>
 First Number: 10
 <br>
@@ -82,7 +82,7 @@ d: Division
 <br>
 e: Exit
 <br><br>
-Choose your opertion: d
+Choose your operation: d
 <br><br>
 First Number: 4
 <br>
@@ -104,6 +104,6 @@ d: Division
 <br>
 e: Exit
 <br><br>
-Choose your opertion: e
+Choose your operation: e
 <br><br>
 Goodbye!
