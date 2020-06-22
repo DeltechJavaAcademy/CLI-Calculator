@@ -13,7 +13,7 @@ You and a teammate will build a calculator in the command line.
   <li>The system shoud display an error if the user tries to divide by zero</li>
  </ul>
  
-<h3>Mock Up</h3>
+<h3>Mock Ups</h3>
 <h4>Example One</h4>
 Welcome to the CLI Calculator
 <br><br>
@@ -35,7 +35,6 @@ Second Number 2
 <br><br>
 Result: 12
 
-<h3>Mock Up</h3>
 <h4>Example Two</h4>
 Welcome to the CLI Calculator
 <br><br>
@@ -67,7 +66,7 @@ All part one requirements plus
   <li>The program will run until the user chooses to exit</li>
  </ul>
  
-<h3>Mock Up</h3>
+<h3>Mock Ups</h3>
 <h4>Example One</h4>
 Welcome to the CLI Calculator
 <br><br>
