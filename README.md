@@ -16,10 +16,14 @@ Welcome to the CLI Calculator
 <br>
 Operations:
 <br>
-<p>1: Addition</p>
-<p>2: Subtraction</p>
-<p>3: Multiplication</p>
-<p>4: Division</p>
+1: Addition
+<br>
+2: Subtraction
+<br>
+3: Multiplication
+<br>
+4: Division
+<br>
 
 Choose your opertion: 3
 
