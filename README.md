@@ -13,7 +13,7 @@ You and a teammate will build a calculator in the command line.
  </ul>
 <h3>Mock Up</h3>
 Welcome to the CLI Calculator
-<br>
+<br><br>
 Operations:
 <br>
 1: Addition
@@ -23,14 +23,13 @@ Operations:
 3: Multiplication
 <br>
 4: Division
-<br>
-
+<br><br>
 Choose your opertion: 3
-
+<br><br>
 First Number: 6
-
+<br>
 Second Number 2
-
+<br><br>
 Result: 12
 
 <h2>Part 2</h2>
