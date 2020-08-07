@@ -1,6 +1,6 @@
 <h1>CLI-Calculator</h1>
 
-You and a teammate will build a calculator in the command line. 
+You and a teammate will build a calculator in the command line. One team member should fork this repo and both team members will work off the formed repo.
 
 <h2>Part One</h2>
 <h3>Requirements</h3>
