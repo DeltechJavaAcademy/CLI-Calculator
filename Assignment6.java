@@ -1,8 +1,8 @@
-package leturesAndAssignments;
+package CLIcalc;
 
 import java.util.*;
 
-public class Assignment6 {
+public class CLIcalc {
 
 	public static void main(String[] args) {
 	
@@ -61,10 +61,4 @@ public class Assignment6 {
 			System.out.println("Result: " + answer);
 		}
 	}
-	else{
-		System.out.println("You did not enter a valid operation. Please start again");
 	}
-
-}
-}
-	
