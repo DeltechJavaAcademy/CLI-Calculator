@@ -2,7 +2,8 @@ package com.dtcc.calculator;
 
 import java.util.Scanner;
 
-public class Calculator {
+public class Calculator 
+{
 	
 	
 	public static void main(String[] args) 
@@ -18,6 +19,7 @@ public class Calculator {
 		
 		char operator;
 		int answer = 0;
+		//boolean multFlag = false;
 		    
 		Scanner input = new Scanner(System.in);
 		
@@ -33,6 +35,27 @@ public class Calculator {
 		    
 		     operator = input.next().charAt(0);
 		     
+		     if (operator == 4 && iNum1 == 0 || iNum2 == 0)
+				{
+			
+		    	 System.out.println("Dividing by 0: Enter a value for the first number:");
+				    
+				    iNum1 = input.nextInt();
+				
+				    System.out.println("Enter a value for the  second number:");
+				    
+				    iNum2 = input.nextInt();
+				
+				    System.out.println("Enter the operation:");
+				    
+				     operator = input.next().charAt(0);
+				
+				}
+			else
+				{
+				;
+				}
+		     
 		switch (operator)
 		    {
 		    case '1': 
@@ -44,13 +67,15 @@ public class Calculator {
 		    case '3': 
 		    	answer = iNum1 * iNum2;
 		    	break;
-		    case '4': 
+		    case '4':
+		    	//multFlag = true;
 		    	answer = iNum1 / iNum2;
 		    	break;
 		    }
 		
+	
 		System.out.println("The answer is: " + answer);
 		
-		} 
+	}
 
 }
