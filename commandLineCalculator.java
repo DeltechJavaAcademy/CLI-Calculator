@@ -24,17 +24,19 @@ public class commandLineCalculator {
 			System.out.println("s: Subtraction");
 			System.out.println("m: Multiplication");
 			System.out.println("d: Division");
+			System.out.println("e: Exit");
 			System.out.println("\n");
 			
 			System.out.print("Choose your operation: ");
 			
-			menu_Option = input.next().charAt(0);
+			menu_Option = input.next().toLowerCase().charAt(0);
 			
 			System.out.print("\n");
 			
 			//Error Checking for input
-			if((menu_Option != 'a' || menu_Option !='A') && (menu_Option !='s' || menu_Option != 'S') && 
-					(menu_Option !='m' || menu_Option != 'M') && (menu_Option !='d' || menu_Option != 'D')) {
+//			if((menu_Option != 'a' || menu_Option !='A') && (menu_Option !='s' || menu_Option != 'S') && 
+//					(menu_Option !='m' || menu_Option != 'M') && (menu_Option !='d' || menu_Option != 'D')) 
+			if(menu_Option != 'a' && menu_Option != 's' && menu_Option != 'm' && menu_Option != 'd' && menu_Option != 'e'){
 				
 				System.out.print("That is an invalid response. Please try again. Thank you \n\n");
 				
