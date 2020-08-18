@@ -11,6 +11,7 @@ public class commandLineCalculator {
 			int stored_value_1;
 			int stored_value_2;
 			int results;
+			boolean e = true;
 			char Continue = 'y';
 		
 		do {
@@ -36,16 +37,22 @@ public class commandLineCalculator {
 			//Error Checking for input
 //			if((menu_Option != 'a' || menu_Option !='A') && (menu_Option !='s' || menu_Option != 'S') && 
 //					(menu_Option !='m' || menu_Option != 'M') && (menu_Option !='d' || menu_Option != 'D')) 
-			if(menu_Option != 'a' && menu_Option != 's' && menu_Option != 'm' && menu_Option != 'd' && menu_Option != 'e'){
+			
+			
+			 if(menu_Option != 'a' && menu_Option != 's' && menu_Option != 'm' && menu_Option != 'd' &&  menu_Option != 'e'){
 				
 				System.out.print("That is an invalid response. Please try again. Thank you \n\n");
+				
+			}else if( menu_Option == 'e' && e == true) {
+				
+				System.out.println("\n\n****Goodbye*****");
 				
 			}else{
 				
 				//Only runs if menu_option = 1,2,3 or 4
 				System.out.print("First Number: ");
 				stored_value_1 = input.nextInt();
-				System.out.print("\n");
+				//System.out.print("\n");
 				
 				System.out.print("Second Number: ");
 				stored_value_2 = input.nextInt();
@@ -55,29 +62,24 @@ public class commandLineCalculator {
 				switch(menu_Option) {
 				
 					case 'a':
-					case 'A':
 						results = stored_value_1 + stored_value_2;
 						System.out.print("\n");
 						System.out.println("Result: " + results);
 						break;
 					
 					case 's':
-					case 'S':
 						results = stored_value_1 - stored_value_2;
 						System.out.print("\n");
 						System.out.println("Result: " + results);
 						break;
 						
 					case 'm':
-					case 'M':
 						results = stored_value_1 * stored_value_2;
 						System.out.print("\n");
 						System.out.println("Result: " + results);
 						break;
 					
 					case 'd':
-					case 'D':
-						
 						//Have to convert for decimals in division
 						float division_Results;
 						float new_value_1;
@@ -102,6 +104,7 @@ public class commandLineCalculator {
 						
 						break;
 						
+						
 					default:
 						
 						System.out.print("\n");
@@ -110,14 +113,15 @@ public class commandLineCalculator {
 				}
 			}
 			
-			System.out.print("Would you like to try again? (y/n): ");
-			
-			Continue = input.next().charAt(0);
-			
-			System.out.print("\n\n\n\n\n\n");
+		System.out.print("Would you like to try again? (y/n): ");
+		
+		Continue = input.next().charAt(0);
+		
+		System.out.print("\n\n\n\n\n\n");
 			
 		}while(Continue == 'y' || Continue == 'Y');
 		
 		System.out.println("\n\n****Goodbye*****");
 	}
 }
+
