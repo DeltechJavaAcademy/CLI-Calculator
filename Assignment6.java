@@ -1,4 +1,6 @@
-package leturesAndAssignments;
+// This code will create a command line calculator
+
+package clicalc;
 
 import java.util.*;
 
@@ -7,7 +9,7 @@ public class Assignment6 {
 	public static void main(String[] args) {
 	
 		Scanner input = new Scanner(System.in);
-		int answer;
+		float answer = 0;
 		
 		System.out.println("Welcome to the CLI Calculator");
 		System.out.println("Operations:");
@@ -24,43 +26,45 @@ public class Assignment6 {
 		
 		if (chosenOp == 'a'){
 			System.out.println("First Number: ");
-			int num1 = input.nextInt();
+			float num1 = input.nextFloat();
 			System.out.println("Second Number: ");
-			int num2 = input.nextInt();
+			float num2 = input.nextFloat();
 			
 			answer = num1 + num2;
 			System.out.println("Result: " + answer);
 		}
 		else if (chosenOp == 's'){
 			System.out.println("First Number: ");
-			int num1 = input.nextInt();
+			float num1 = input.nextFloat();
 			System.out.println("Second Number: ");
-			int num2 = input.nextInt();
+			float num2 = input.nextFloat();
 			
 			answer = num1 - num2;
 			System.out.println("Result: " + answer);
 		}
 		else if (chosenOp == 'm'){
 			System.out.println("First Number: ");
-			int num1 = input.nextInt();
+			float num1 = input.nextFloat();
 			System.out.println("Second Number: ");
-			int num2 = input.nextInt();
+			float num2 = input.nextFloat();
 			
 			answer = num1 * num2;
 			System.out.println("Result: " + answer);
 		}
 		else if (chosenOp == 'd'){
 			System.out.println("First Number: ");
-			int num1 = input.nextInt();
+			float num1 = input.nextFloat();
 			System.out.println("Second Number: ");
-			int num2 = input.nextInt();
+			float num2 = input.nextFloat();
 			
 			if (num2 == 0){
 				System.out.println("Result: Cannot divide by 0.");
 			}
 			else{
-				answer = num1 / num2;
-				System.out.println("Result: " + answer);
+			answer = num1 / num2;
+		// display answer to division problem with 2 decimals		
+		    System.out.println("Result: "); 
+		    System.out.printf("%.2f", answer); 
 			}
 		}	
 		else{
